@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+#UserList{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,220px);
+  grid-gap:5px;
+  justify-content: center;
+  margin: 6%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.UserCard{
+  height: 200px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  padding: 4%;
+  margin: 0;
+  border-radius: 5px;
+}
+.UserCard:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor:pointer
+}
+.UserCard button{
   color: white;
+  background:rgb(12, 4, 70);
+  border: none;
+  border-radius: 2px;
+  padding: 2% 4%;
 }
-
-.App-link {
-  color: #61dafb;
+.UserCard a{
+  display: flex;
+  text-decoration: none;
 }
+.UserCard button:hover{
+  cursor:pointer;
+  font-size: 14px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+span{
+  font-weight: 500;
 }
